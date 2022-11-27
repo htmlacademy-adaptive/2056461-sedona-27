@@ -10,16 +10,16 @@
   <header class="main-header">
     <div class="main-header__container">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-img" src="" width="185" height="96" alt="Добро пожаловать в Седону!">
+        <img class="main-header__logo-img" src="./img/logo-sedona.svg" width="185" height="96" alt="Добро пожаловать в Седону!">
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="./index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фото и видео</a>
+            <a class="main-nav__link" href="./catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Форма отзыва</a>
@@ -34,16 +34,16 @@
   <main class="catalog-container">
     <section class="catalog-container__intro intro">
       <div class="intro__container">
-        <img class="intro__logo" src="#" width="229" height="39" alt="Текстовый логотип Седоны">
+        <img class="intro__logo" src="./img/lettering-sedona.svg" width="229" height="39" alt="Текстовый логотип Седоны">
       </div>
       <h1 class="intro__title">Оставьте свой отзыв</h1>
       <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </section>
     <form class="catalog-container__form form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__bio">
+      <fieldset class="form__bio bio">
         <div class="bio__container">
-          <legend class="bio__legend legend">Представьтесь:</legend>
+          <h2 class="bio__legend legend">Представьтесь:</h2>
           <ul class="bio__list">
             <li class="bio__item">
               <label class="bio__label label-textfield" for="name">Имя*:</label>
@@ -62,9 +62,9 @@
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form__contact">
+      <fieldset class="form__contact contact">
         <div class="contact__container">
-          <legend class="contact__legend legend">Контактная информация:</legend>
+          <h2 class="contact__legend legend">Контактная информация:</h2>
           <ul class="contact__list">
             <li class="contact__item">
               <label class="contact__label label-textfield" for="phone">Контактный телефон*:</label>
@@ -72,7 +72,7 @@
                 placeholder="Введите телефон" required>
               <span class="contact__icon"></span>
             </li>
-            <li class="bio__item">
+            <li class="contact__item">
               <label class="contact__label label-textfield" for="email">Электронная почта*:</label>
               <input class="contact__input input-textfield" type="text" name="surname" id="email"
                 placeholder="Введите e-mail" required>
@@ -83,7 +83,7 @@
       </fieldset>
       <fieldset class="form__impression impression">
         <div class="impression__container">
-          <legend class="impression__legend legend">Ваше Общее впечатление:</legend>
+          <h2 class="impression__legend legend">Ваше Общее впечатление:</h2>
           <ul class="impression__list">
             <li class="impression__item">
               <label class="impression__label">
@@ -112,7 +112,7 @@
       </fieldset>
       <fieldset class="form__visited visited">
         <div class="visited__container">
-          <legend class="visited__legend legend">Посещенные достопримечательности:</legend>
+          <h2 class="visited__legend legend">Посещенные достопримечательности:</h2>
           <ul class="visited__list">
             <li class="visited__item">
               <label class="visited__label">
@@ -148,7 +148,7 @@
         </div>
       </fieldset>
       <fieldset class="form__comment comment">
-        <label class="comment__label" for="comment">Опишите свои эмоции:</label>
+        <h2 class="comment__label" for="comment">Опишите свои эмоции:</h2>
         <textarea class="comment__area" id="comment">Опишите подробно все свои восторги </textarea>
       </fieldset>
       <div class="form__button-container">
@@ -163,17 +163,22 @@
       <p class="main-footer__title">#visitsedona</p>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#"><span class="visually-hidden">Телеграм</span></a>
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
         </li>
       </ul>
       <a class="main-footer__developer developer">
-        <p class="developer__title">Разработано</p>
         <img class="developer__logo" src="#" width="27" height="34" alt="Логотип студии разработчика HTMLAcademy">
       </a>
     </div>
