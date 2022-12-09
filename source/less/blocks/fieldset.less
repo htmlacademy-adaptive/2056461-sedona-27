@@ -1,0 +1,81 @@
+.fieldset {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 24px 0 39px;
+
+  &--comment {
+    padding-bottom: 56px;
+  }
+}
+
+.fieldset__legend {
+  padding-bottom: 20px;
+}
+
+.fieldset__list {
+  list-style: none;
+  display: grid;
+  row-gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.fieldset__item {
+  display: grid;
+
+  &--contact {
+    grid-template-columns: 222px 58px;
+  }
+}
+
+.fieldset__label {
+  padding-left: 16px;
+
+  &--evaluation {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.fieldset__dot {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin-right: 16px;
+}
+
+.fieldset__box {
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  margin-right: 16px;
+}
+
+.fieldset__input {
+  grid-column: 1/2;
+}
+
+.fieldset__icon {
+  background-color: #e6e6e6;
+
+  &--phone {
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--email {
+    background-image: url("../../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
