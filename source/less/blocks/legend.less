@@ -1,7 +1,25 @@
 .legend {
+  position: relative;
   .title-18 ();
 
-  &--comment {
-    display: block;
+  @media (min-width: @tablet-width) {
+    .title-21 ();
+  }
+}
+
+.legend--long {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      min-width: 648px;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, #dbdbdb, #dbdbdb 19%, #ffffff00 19%, #ffffff00 81%, #ebebeb 81%);
+    }
   }
 }

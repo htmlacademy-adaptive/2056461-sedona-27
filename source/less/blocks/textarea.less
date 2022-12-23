@@ -3,10 +3,23 @@
   .title-18 ();
   text-align: left;
   text-transform: none;
-  width: 280px;
+  min-width: 280px;
+  width: 100%;
   min-height: 150px;
   border: none;
   padding: 16px;
   color: #00000030;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    min-width: 648px;
+    min-height: 160px;
+    transition: 1.5s;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 768px;
+    width: calc(100% - 192px);
+    transition: 1.5s;
+  }
 }

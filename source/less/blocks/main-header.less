@@ -2,10 +2,20 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 284px;
+  min-width: 280px;
   min-height: 56px;
   margin: 0 auto;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .main-header__logo {
@@ -17,8 +27,16 @@
   margin-left: auto;
   margin-right: auto;
   justify-self: center;
+
+  @media (min-width: @tablet-width) {
+    z-index: 1;
+  }
 }
 
 .main-header__nav {
   margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

@@ -11,7 +11,8 @@
   <header class="main-header">
     <div class="main-header__container">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-img" src="./img/logo-sedona.svg" width="185" height="96" alt="Добро пожаловать в Седону!">
+        <img class="main-header__logo-img" src="./img/logo-sedona.svg" width="185" height="96"
+          alt="Добро пожаловать в Седону!">
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка меню</span></button>
@@ -44,7 +45,7 @@
     <section class="main-container__advantages advantages">
       <div class="advantages__container">
         <h2 class="visually-hidden">Преимущества города Седона</h2>
-        <p class="advantages__title">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <ol class="advantages__list benefits">
@@ -56,7 +57,16 @@
               для
               туристов, там течёт своя жизнь</p>
           </div>
-          <img class="item__img" src="./img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Здания исторического центра города Седона">
+          <div class="item__pic">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/photo-city-desktop@1x.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)"
+                srcset="./img/photo-city-tablet@1x.jpg 1x, ./img/photo-city-tablet@2x.jpg 2x" width="512" height="256">
+              <img class="item__img" src="./img/photo-city-mobile@1x.jpg" srcset="./img/photo-city-mobile@2x.jpg 2x"
+                width="320" height="260" alt="Здания исторического центра города Седона">
+            </picture>
+          </div>
           <ul class="benefits__list service">
             <li class="service__item">
               <h4 class="service__title">Жильё</h4>
@@ -75,6 +85,18 @@
           </ul>
         </li>
         <li class="benefits__item item item--image">
+          <div class="item__pic">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x" width="800"
+                height="256">
+              <source media="(min-width: 768px)"
+                srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x" width="512"
+                height="256">
+              <img class="item__img" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x"
+                width="320" height="260" alt="Знаменитый каньон вблизи города Седона">
+            </picture>
+          </div>
           <div class="item__container item__container--image">
             <h3 class="item__title">Там есть мост дьявола</h3>
             <p class="item__number">— №2 —</p>
@@ -82,7 +104,6 @@
               пройти!
               Если вы осмелитесь, конечно</p>
           </div>
-          <img class="item__img" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Знаменитый каньон вблизи города Седона">
         </li>
         <li class="benefits__item item">
           <h3 class="item__title">Небольшая площадь</h3>
@@ -141,7 +162,8 @@
         </li>
       </ul>
       <a class="main-footer__developer developer">
-        <img class="developer__logo" src="./img/icon-developer.svg" width="128" height="34" alt="Логотип студии разработчика HTMLAcademy">
+        <img class="developer__logo" src="./img/icon-developer.svg" width="128" height="34"
+          alt="Логотип студии разработчика HTMLAcademy">
       </a>
     </div>
   </footer>
