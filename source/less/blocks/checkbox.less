@@ -1,0 +1,18 @@
+.checkbox {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__box {
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  margin-right: 16px;
+}
+
+.checkbox__input[type="checkbox"]:checked + .checkbox__box {
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

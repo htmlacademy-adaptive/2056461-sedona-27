@@ -1,17 +1,31 @@
 .action__container {
-  width: 284px;
+  min-width: 320px;
   margin: 0 auto;
-  padding: 38px 0 49px;
+  padding: 38px 20px 49px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 61px 0 58px;
+  }
 }
 
 .action__title {
   .title-18 ();
-  margin-bottom: 26px;
+  margin: 0 0 26px;
+
+  @media (min-width: @tablet-width) {
+    .title-30 ();
+  }
 }
 
 .action__text {
   .text-14 ();
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 435px;
+    margin: 0 auto 40px;
+  }
 }
 
 .action__button {

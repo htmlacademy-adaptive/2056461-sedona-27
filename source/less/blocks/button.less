@@ -1,9 +1,22 @@
 .button {
+  box-sizing: border-box;
+  display: block;
   .title-21 ();
-  width: 280px;
+  min-width: 280px;
+  width: 100%;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
-  padding: 16px 46px;
+  padding: 16px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
+
+  &--submit {
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+  }
 }

@@ -1,3 +1,15 @@
 .benefits {
   list-style: none;
+  min-width: 320px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.benefits__list {
+  grid-column: 1/-1;
 }

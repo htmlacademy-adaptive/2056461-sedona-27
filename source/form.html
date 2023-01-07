@@ -42,10 +42,10 @@
         достопримечательностях</p>
     </section>
     <form class="form-container__form form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__fieldset fieldset">
+      <fieldset class="form__fieldset fieldset fieldset--bio">
         <div class="fieldset__container">
           <h2 class="fieldset__legend legend">Представьтесь:</h2>
-          <ul class="fieldset__list">
+          <ul class="fieldset__list fieldset__list--bio">
             <li class="fieldset__item">
               <label class="fieldset__label label-textfield" for="name">Имя*:</label>
               <input class="fieldset__input input-textfield" type="text" name="name" id="name" placeholder="Пётр" required>
@@ -63,10 +63,10 @@
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset fieldset">
+      <fieldset class="form__fieldset fieldset fieldset--contacts">
         <div class="fieldset__container">
           <h2 class="fieldset__legend legend">Контактная информация:</h2>
-          <ul class="fieldset__list">
+          <ul class="fieldset__list fieldset__list--contacts">
             <li class="fieldset__item fieldset__item--contact">
               <label class="fieldset__label label-textfield" for="phone">Контактный телефон*:</label>
               <input class="fieldset__input input-textfield" type="text" name="phone" id="phone"
@@ -82,75 +82,75 @@
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset fieldset">
+      <fieldset class="form__fieldset fieldset fieldset--long">
         <div class="fieldset__container">
-          <h2 class="fieldset__legend legend">Ваше Общее впечатление:</h2>
-          <ul class="fieldset__list">
+          <h2 class="fieldset__legend legend legend--long">Ваше Общее впечатление:</h2>
+          <ul class="fieldset__list fieldset__list--radio">
             <li class="fieldset__item">
-              <label class="fieldset__label fieldset__label--evaluation">
-                <input class="visually-hidden fieldset__input input-evaluation" type="radio" name="evaluation"
+              <label class="fieldset__label radio">
+                <input class="visually-hidden radio__input" type="radio" name="evaluation"
                   checked>
-                <span class="fieldset__dot"></span>
-                <span class="fieldset__text label-evaluation">Скорее положительное</span>
+                <span class="radio__dot"></span>
+                <span class="radio__text label-evaluation">Скорее положительное</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__label fieldset__label--evaluation">
-                <input class="visually-hidden fieldset__input input-evaluation" type="radio" name="evaluation">
-                <span class="fieldset__dot"></span>
-                <span class="fieldset__text label-evaluation">Скорее отрицательное</span>
+              <label class="fieldset__label radio">
+                <input class="visually-hidden radio__input" type="radio" name="evaluation">
+                <span class="radio__dot"></span>
+                <span class="radio__text label-evaluation">Скорее отрицательное</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__label fieldset__label--evaluation">
-                <input class="visually-hidden fieldset__input input-evaluation" type="radio" name="evaluation">
-                <span class="fieldset__dot"></span>
-                <span class="fieldset__text label-evaluation">Затрудняюсь ответить</span>
+              <label class="fieldset__label radio">
+                <input class="visually-hidden radio__input" type="radio" name="evaluation">
+                <span class="radio__dot"></span>
+                <span class="radio__text label-evaluation">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset fieldset">
+      <fieldset class="form__fieldset fieldset fieldset--long">
         <div class="fieldset__container">
-          <h2 class="fieldset__legend legend">Посещенные достопримечательности:</h2>
-          <ul class="fieldset__list">
+          <h2 class="fieldset__legend legend legend--long">Посещенные<br> достопримечательности:</h2>
+          <ul class="fieldset__list fieldset__list--checkbox">
             <li class="fieldset__item">
-              <label class="fieldset__label fieldset__label--evaluation">
-                <input class="visually-hidden fieldset__input input-evaluation" type="checkbox" name="devil-bridge"
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="devil-bridge"
                   checked>
-                <span class="fieldset__box"></span>
-                <span class="fieldset__text label-evaluation">Мост Дьявола</span>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text label-evaluation">Мост Дьявола</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__label fieldset__label--evaluation">
-                <input class="visually-hidden fieldset__input input-evaluation" type="checkbox" name="bell-rock" checked>
-                <span class="fieldset__box"></span>
-                <span class="fieldset__text label-evaluation">Гора-Колокол</span>
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="bell-rock" checked>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text label-evaluation">Гора-Колокол</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__label fieldset__label--evaluation">
-                <input class="visually-hidden fieldset__input input-evaluation" type="checkbox" name="slide-park"
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="slide-park"
                   checked>
-                <span class="fieldset__box"></span>
-                <span class="fieldset__text label-evaluation">Слайд-парк</span>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text label-evaluation">Слайд-парк</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__label fieldset__label--evaluation">
-                <input class="visually-hidden fieldset__input input-evaluation" type="checkbox" name="red-rocks">
-                <span class="fieldset__box"></span>
-                <span class="fieldset__text label-evaluation">Красные скалы</span>
+              <label class="fieldset__label checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="red-rocks">
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text label-evaluation">Красные скалы</span>
               </label>
             </li>
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form__fieldset fieldset">
+      <fieldset class="form__fieldset fieldset fieldset--long">
         <div class="fieldset__container fieldset__container--comment">
-          <label class="fieldset__legend legend legend--comment" for="comment">Опишите свои эмоции:</label>
+          <label class="fieldset__legend legend legend--long" for="comment">Опишите свои эмоции:</label>
           <textarea class="fieldset__textarea textarea" id="comment">Опишите подробно все свои восторги </textarea>
         </div>
       </fieldset>
