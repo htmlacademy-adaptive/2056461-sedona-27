@@ -1,5 +1,7 @@
 .action__container {
+  box-sizing: border-box;
   min-width: 320px;
+  min-height: 287px;
   margin: 0 auto;
   padding: 38px 20px 49px;
 
@@ -10,8 +12,8 @@
 }
 
 .action__title {
-  .title-18 ();
-  margin: 0 0 26px;
+  .title-21 ();
+  margin: 0 0 21px;
 
   @media (min-width: @tablet-width) {
     .title-30 ();
@@ -19,8 +21,10 @@
 }
 
 .action__text {
+  box-sizing: border-box;
   .text-14 ();
   margin: 0 auto 32px;
+  min-height: 63px;
 
   @media (min-width: @tablet-width) {
     width: 435px;

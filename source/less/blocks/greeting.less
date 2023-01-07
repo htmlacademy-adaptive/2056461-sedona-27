@@ -3,13 +3,40 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #eeeeee;
+  min-width: 320px;
   min-height: 389px;
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .greeting__container {
+  position: relative;
   min-width: 280px;
   padding: 90px 0 85px;
   margin: 0 auto;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 27px;
+    background: linear-gradient(to bottom left, transparent 50%, #ffffff 50%, #ffffff 100%);
+  }
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 27px;
+    background: linear-gradient(to bottom right, transparent 50%, #ffffff 50%, #ffffff 100%);
+  }
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
@@ -18,6 +45,7 @@
 }
 
 .greeting__logo {
+  position: relative;
   display: block;
   margin: 0 auto;
 
