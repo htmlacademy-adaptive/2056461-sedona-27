@@ -1,10 +1,15 @@
 .social {
+  box-sizing: border-box;
   width: 156px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0 8px;
+  }
 }
 
 .social__item {

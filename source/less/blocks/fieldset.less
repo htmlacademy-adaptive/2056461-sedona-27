@@ -22,16 +22,22 @@
   }
 }
 
+.fieldset--comment {
+  @media (min-width: @tablet-width) {
+    margin-top: -8px;
+  }
+}
+
 
 .fieldset__container {
   box-sizing: border-box;
-  min-width: 280px;
+  min-width: 320px;
   width: 100%;
   margin: 0;
-  padding: 24px 20px 39px;
+  padding: 24px 20px 24px;
 
   &--comment {
-    padding-bottom: 56px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: @tablet-width) {
@@ -50,6 +56,7 @@
 }
 
 .fieldset__list {
+  box-sizing: border-box;
   list-style: none;
   min-width: 280px;
   display: grid;
@@ -63,24 +70,31 @@
   }
 
   &--bio {
+    margin-bottom: 15px;
+
     @media (min-width: @tablet-width) {
       padding-right: 43px;
       transition: 1.5s;
     }
 
     @media (min-width: @desktop-width) {
+      margin-bottom: 22px;
       padding-right: 63px;
       transition: 1.5s;
     }
   }
 
   &--contacts {
+    margin-bottom: 9px;
+
     @media (min-width: @tablet-width) {
+      margin-bottom: 0;
       padding-left: 43px;
       transition: 1.5s;
     }
 
     @media (min-width: @desktop-width) {
+      margin-right: 0;
       padding-left: 63px;
       transition: 1.5s;
     }
@@ -97,9 +111,10 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: calc(100% - 106px);
+      width: 960px;
+      padding: 18px 53px 24px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 280px 280px 280px;
       column-gap: 28px;
       margin: 0 auto;
       transition: 2s;
@@ -122,6 +137,7 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 64px;
       margin: 0 auto;
+      padding: 31px 0 45px;
       transition: 2s;
     }
   }
@@ -131,7 +147,8 @@
   display: grid;
 
   &--contact {
-    grid-template-columns: 1fr 58px;
+    min-width: 280px;
+    grid-template-columns: auto 58px;
   }
 }
 

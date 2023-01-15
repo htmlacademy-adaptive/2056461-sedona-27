@@ -1,9 +1,22 @@
 .map-container__map {
   display: block;
   margin: 0 auto;
+  min-width: 320px;
   width: 100%;
   background-image: url("../../img/map-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 0 auto 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 2px;
+  }
 }

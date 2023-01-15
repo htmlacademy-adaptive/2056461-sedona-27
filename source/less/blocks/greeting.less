@@ -1,23 +1,110 @@
 .greeting {
+  position: relative;
   background-image: url("../../img/index-background-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #eeeeee;
+  min-width: 320px;
   min-height: 389px;
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 50%;
+      height: 38px;
+      background: linear-gradient(to bottom left, transparent 50%, #ffffff 50%, #ffffff 100%);
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 57px;
+    }
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: "";
+      width: 50%;
+      height: 38px;
+      background: linear-gradient(to bottom right, transparent 50%, #ffffff 50%, #ffffff 100%);
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 57px;
+    }
+  }
 }
 
 .greeting__container {
+  position: relative;
   min-width: 280px;
   padding: 90px 0 85px;
   margin: 0 auto;
 
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 27px;
+    background: linear-gradient(to bottom left, transparent 50%, #ffffff 50%, #ffffff 100%);
+
+    @media (min-width: @tablet-width) {
+      bottom: -6px;
+      left: 34px;
+      height: 65px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 250px;
+      bottom: 0;
+      width: 350px;
+      height: 57px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: 27px;
+    background: linear-gradient(to bottom right, transparent 50%, #ffffff 50%, #ffffff 100%);
+
+    @media (min-width: @tablet-width) {
+      bottom: -6px;
+      right: 34px;
+      height: 65px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 250px;
+      bottom: 0;
+      width: 350px;
+      height: 57px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+    min-width: 768px;
     padding: 77px 0 91px;
   }
 }
 
 .greeting__logo {
+  position: relative;
   display: block;
   margin: 0 auto;
 
