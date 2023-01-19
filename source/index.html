@@ -15,8 +15,9 @@
   <header class="main-header">
     <div class="main-header__container">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-img" src="./img/logo-sedona.svg" width="185" height="96"
-          alt="Добро пожаловать в Седону!">
+        <svg class="main-header__logo-img" width="185" height="96" aria-label="Добро пожаловать в Седону!">
+          <use href="./img/sprite.svg#logo-sedona"></use>
+        </svg>
       </a>
       <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка меню</span></button>
@@ -42,8 +43,9 @@
     <section class="main-container__greeting greeting">
       <div class="greeting__container">
         <h2 class="visually-hidden">Приветствие</h2>
-        <img class="greeting__logo" src="./img/lettering-index.svg" width="282" height="214"
-          alt="Леттеринг приветствие: добро пожаловать в прекрасную Седону, потому что Большой каньон отстой!">
+        <svg class="greeting__logo" width="282" height="214" aria-label="Леттеринг приветствие: добро пожаловать в прекрасную Седону, потому что Большой каньон отстой!">
+          <use href="./img/sprite.svg#lettering-index"></use>
+        </svg>
       </div>
     </section>
     <section class="main-container__advantages advantages">
@@ -63,6 +65,14 @@
           </div>
           <div class="item__pic">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/photo-city-desktop@1x.webp 1x, ./img/photo-city-desktop@2x.webp 2x" width="800"
+                height="256">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/photo-city-tablet@1x.webp 1x, ./img/photo-city-tablet@2x.webp 2x" width="512"
+                height="256">
+              <source type="image/webp" srcset="./img/photo-city-mobile@1x.webp 1x, ./img/photo-city-mobile@2x.webp 2x"
+                width="320" height="260">
               <source media="(min-width: 1200px)"
                 srcset="./img/photo-city-desktop@1x.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x" width="800"
                 height="256">
@@ -92,6 +102,14 @@
         <li class="benefits__item item item--image">
           <div class="item__pic">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/photo-bridge-desktop@1x.webp 1x, ./img/photo-bridge-desktop@2x.webp 2x" width="800"
+                height="256">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/photo-bridge-tablet@1x.webp 1x, ./img/photo-bridge-tablet@2x.webp 2x" width="512"
+                height="256">
+              <source type="image/webp" srcset="./img/photo-bridge-mobile@1x.webp 1x, ./img/photo-bridge-mobile@2x.webp 2x"
+                width="320" height="260">
               <source media="(min-width: 1200px)"
                 srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x" width="800"
                 height="256">
@@ -167,8 +185,9 @@
         </li>
       </ul>
       <a class="main-footer__developer developer developer--index">
-        <img class="developer__logo" src="./img/icon-developer.svg" width="128" height="36"
-          alt="Логотип студии разработчика HTMLAcademy">
+        <svg class="developer__logo" width="128" height="36" aria-label="Логотип студии разработчика HTMLAcademy">
+          <use href="./img/sprite.svg#icon-developer"></use>
+        </svg>
       </a>
     </div>
   </footer>
