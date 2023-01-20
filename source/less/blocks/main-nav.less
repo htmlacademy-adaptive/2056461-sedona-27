@@ -136,6 +136,21 @@
   width: 100%;
   box-shadow: inset 0 -1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+  @media (max-width: @mobile-width-only) {
+    &:hover {
+      background-color: #669eC0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: #ffffff30;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     min-width: 153px;
@@ -143,16 +158,41 @@
     color: #000000;
     background-color: #ffffff;
     box-shadow: none;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #b3b3b3;
+    }
+
+    &:disabled {
+      color: #e5e5e5;
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-width: 240px;
-    transition: 1.5s;
+    transition: 0.5s;
   }
 }
 
 .main-nav__item:nth-child(4) .main-nav__link {
   @media (max-width: @mobile-width-only) {
     background: linear-gradient(to bottom, #81b3d2 90%, #000000 120%);
+
+    &:hover {
+      background: linear-gradient(to bottom, #669ec0 90%, #000000 120%);
+    }
+
+    &:active {
+      background: linear-gradient(to bottom, #5496bd 90%, #000000 120%);
+      color: #ffffff30;
+    }
+
+    &:disabled {
+      background: linear-gradient(to bottom, #e5e5e5 90%, #000000 120%);
+    }
   }
 }

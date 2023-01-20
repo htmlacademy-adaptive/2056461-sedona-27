@@ -46,7 +46,27 @@
   }
 }
 
+.invitation__picture {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent;
+    border-left: 48px solid #ffffff70;
+    border-bottom: 27px solid transparent;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
 .invitation__video {
+
   display: block;
   width: 100%;
   object-fit: cover;

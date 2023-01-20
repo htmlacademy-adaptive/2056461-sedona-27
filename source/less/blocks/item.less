@@ -56,7 +56,6 @@
     @media (min-width: @desktop-width) {
       padding: 52px 50px 51px;
     }
-
   }
 
   &:nth-of-type(4) .item__text {
@@ -123,6 +122,14 @@
 
     color: #ffffff;
     background-color: #81b3d2;
+
+    @media (min-width: @tablet-width) {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -175,4 +182,8 @@
   width: 100%;
   object-fit: cover;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    height: 100%;
+  }
 }
