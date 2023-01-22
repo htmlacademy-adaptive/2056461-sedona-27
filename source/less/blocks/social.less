@@ -8,7 +8,7 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 0 8px;
+    margin: 0 0 0 -8px;
   }
 }
 
@@ -43,11 +43,13 @@
 
   &:hover {
     background-color: #669ec0;
+    transition: 0.3s;
   }
 
   &:active {
     background-color: #5496bd;
     color: #ffffff30;
+    transition: 0.3s;
   }
 
   &:disabled {

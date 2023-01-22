@@ -3,6 +3,7 @@
   box-sizing: border-box;
   min-height: 346px;
   padding-bottom: 28px;
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     min-width: 768px;
@@ -24,6 +25,7 @@
 
   &::after {
     @media (min-width: @tablet-width) {
+      z-index: 1;
       box-sizing: border-box;
       position: absolute;
       left: 34px;
@@ -44,6 +46,7 @@
 
   &::before {
     @media (min-width: @tablet-width) {
+      z-index: 1;
       position: absolute;
       right: 34px;
       top: 231px;
@@ -64,7 +67,6 @@
 
 .intro__container {
   position: relative;
-  z-index: -1;
   min-width: 320px;
   width: 100%;
   margin-bottom: 37px;
