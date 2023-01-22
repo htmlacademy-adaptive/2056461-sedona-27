@@ -7,9 +7,8 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    min-width: 768px;
-    width: calc(100% - 120px);
-    padding: 58px 0 25px;
+    min-width: fit-content;
+    padding: 58px 60px 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,15 +45,44 @@
   }
 }
 
+.invitation__picture {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: auto;
+  margin: 0 auto;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent;
+    border-left: 48px solid #ffffff70;
+    border-bottom: 27px solid transparent;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+  }
+}
+
 .invitation__video {
   display: block;
+  box-sizing: border-box;
   width: 100%;
   object-fit: cover;
   margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: calc(100% - 120px);
-  }
 
   @media (min-width: @desktop-width) {
     max-width: 800px;
