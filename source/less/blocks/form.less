@@ -1,10 +1,11 @@
 .form {
+  background-color: #ffffff;
+
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     min-width: 628px;
-    max-width: 960px;
-    width: calc(100% - 120px);
-    padding: 12px 0 48px;
+    width: 100%;
+    padding: 12px 60px 65px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,9 +14,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    width: 1200px;
+    max-width: none;
     grid-template-columns: 493px 466px;
-    padding: 10px 0 48px;
+    padding: 10px 120px 65px;
   }
 }
 

@@ -7,14 +7,19 @@
   }
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top -40px center;
   background-color: #eeeeee;
   min-width: 320px;
   min-height: 389px;
 
+  @media (min-width: @tablet-width) {
+    background-position: top -3px center;
+  }
+
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     margin: 0 auto;
+    background-position: center center;
   }
 
   &::after {
@@ -106,6 +111,7 @@
     min-width: 768px;
     padding: 77px 0 91px;
   }
+
 }
 
 .greeting__logo {

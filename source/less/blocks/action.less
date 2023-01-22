@@ -12,6 +12,8 @@
 
   @media (min-width: @desktop-width) {
     padding: 61px 0 67px;
+    width: 1200px;
+    background-color: #ffffff;
   }
 }
 
@@ -31,9 +33,17 @@
   margin: 0 auto 32px;
   min-height: 63px;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     width: 435px;
     margin: 0 auto 19px;
+
+    & br {
+      display: inline;
+    }
   }
 
   @media (min-width: @desktop-width) {

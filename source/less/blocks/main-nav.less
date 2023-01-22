@@ -138,12 +138,14 @@
 
   @media (max-width: @mobile-width-only) {
     &:hover {
-      background-color: #669eC0;
+      background-color: #669ec0;
+      transition: 0.3s;
     }
 
     &:active {
       background-color: #5496bd;
       color: #ffffff30;
+      transition: 0.3s;
     }
 
     &:disabled {
@@ -174,7 +176,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 240px;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
 
@@ -184,11 +186,13 @@
 
     &:hover {
       background: linear-gradient(to bottom, #669ec0 90%, #000000 120%);
+      transition: 0.3s;
     }
 
     &:active {
       background: linear-gradient(to bottom, #5496bd 90%, #000000 120%);
       color: #ffffff30;
+      transition: 0.3s;
     }
 
     &:disabled {
