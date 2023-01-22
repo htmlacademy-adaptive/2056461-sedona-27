@@ -9,6 +9,8 @@
   <link rel="icon" href="./img/favicon/152x152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicon/180x180.png">
   <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -54,16 +56,19 @@
       <ul class="gallery__list">
         <li class="gallery__item card">
           <div class="card__container">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="./img/catalog/photo-1-desktop@1x.jpg, ./img/catalog/photo-1-desktop@2x.jpg 2x" width="1200"
-                height="400">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/photo-1-tablet@1x.jpg, ./img/catalog/photo-1-tablet@2x.jpg 2x" width="648"
-                height="400"><img class="card__img" src="./img/catalog/photo-1-mobile@1x.jpg"
-                srcset="./img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="280"
-                alt="Закат в пустыне вблизи седоны">
-            </picture>
+            <a class="card__picture" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/catalog/photo-1-desktop@1x.jpg, ./img/catalog/photo-1-desktop@2x.jpg 2x" width="1200"
+                  height="400">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/photo-1-tablet@1x.jpg, ./img/catalog/photo-1-tablet@2x.jpg 2x" width="648"
+                  height="400">
+                <img class="card__img" src="./img/catalog/photo-1-mobile@1x.jpg"
+                  srcset="./img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Закат в пустыне вблизи седоны">
+              </picture>
+            </a>
             <div class="card__description">
               <h2 class="card__title">Неродные просторы</h2>
               <p class="card__text">Автор фото: Борис</p>
@@ -80,16 +85,19 @@
         </li>
         <li class="gallery__item card">
           <div class="card__container">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/photo-2-desktop@1x.jpg, ./img/catalog/photo-2-desktop@2x.jpg 2x" width="400"
-                height="267">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/photo-2-tablet@1x.jpg, ./img/catalog/photo-2-tablet@2x.jpg 2x" width="324"
-                height="267"><img class="card__img" src="./img/catalog/photo-2-mobile@1x.jpg"
-                srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="280"
-                alt="Закат в пустыне вблизи седоны">
-            </picture>
+            <a class="card__picture" href="#">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/photo-2-desktop@1x.jpg, ./img/catalog/photo-2-desktop@2x.jpg 2x" width="400"
+                  height="267">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/photo-2-tablet@1x.jpg, ./img/catalog/photo-2-tablet@2x.jpg 2x" width="324"
+                  height="267">
+                <img class="card__img" src="./img/catalog/photo-2-mobile@1x.jpg"
+                  srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Закат в пустыне вблизи седоны">
+              </picture>
+            </a>
             <div class="card__description">
               <h2 class="card__title">Местная растительность</h2>
               <p class="card__text">Автор фото: Сергей</p>
@@ -106,15 +114,18 @@
         </li>
         <li class="gallery__item card">
           <div class="card__container">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/photo-3-desktop@1x.jpg, ./img/catalog/photo-3-desktop@2x.jpg 2x" width="400"
-                height="267">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/photo-3-tablet@1x.jpg, ./img/catalog/photo-3-tablet@2x.jpg 2x" width="324"
-                height="267"><img class="card__img" src="./img/catalog/photo-3-mobile@1x.jpg"
-                srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Закат в пустыне вблизи седоны">
-            </picture>
+            <a class="card__picture" href="#">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/photo-3-desktop@1x.jpg, ./img/catalog/photo-3-desktop@2x.jpg 2x" width="400"
+                  height="267">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/photo-3-tablet@1x.jpg, ./img/catalog/photo-3-tablet@2x.jpg 2x" width="324"
+                  height="267">
+                <img class="card__img" src="./img/catalog/photo-3-mobile@1x.jpg"
+                  srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Закат в пустыне вблизи седоны">
+              </picture>
+            </a>
             <div class="card__description">
               <h2 class="card__title">Дорога на север</h2>
               <p class="card__text">Автор фото: Петр</p>
@@ -131,16 +142,19 @@
         </li>
         <li class="gallery__item card">
           <div class="card__container">
+          <a class="card__picture" href="#">
             <picture>
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/photo-4-desktop@1x.jpg, ./img/catalog/photo-4-desktop@2x.jpg 2x" width="400"
                 height="267">
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/photo-4-tablet@1x.jpg, ./img/catalog/photo-4-tablet@2x.jpg 2x" width="324"
-                height="267"><img class="card__img" src="./img/catalog/photo-4-mobile@1x.jpg"
+                height="267">
+              <img class="card__img" src="./img/catalog/photo-4-mobile@1x.jpg"
                 srcset="./img/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="280"
                 alt="Закат в пустыне вблизи седоны">
             </picture>
+          </a>
             <div class="card__description">
               <h2 class="card__title">Мост дьявола</h2>
               <p class="card__text">Автор фото: Антон</p>
@@ -163,15 +177,16 @@
         <p class="invitation__title">Все еще сомневаетесь?</p>
         <p class="invitation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
-        <div class="invitation__picture">
+        <a class="invitation__picture" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg, ./img/video-desktop@2x.jpg 2x"
               width="800" height="500">
             <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg, ./img/video-tablet@2x.jpg 2x"
-              width="648" height="500"><img class="invitation__video" src="./img/video-mobile@1x.jpg"
+              width="648" height="500">
+            <img class="invitation__video" src="./img/video-mobile@1x.jpg"
               srcset="./img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Смотри видео чтобы узнать больше">
           </picture>
-        </div>
+        </a>
       </div>
     </section>
   </main>
