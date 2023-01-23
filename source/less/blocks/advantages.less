@@ -4,33 +4,21 @@
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
-  min-height: 240px;
-  padding: 34px 0 52px;
+  min-height: 203px;
+  padding: 34px 0 16px;
   background-color: #ffffff;
 
   &::after {
     @media (max-width: @mobile-width-only) {
       position: absolute;
       z-index: 1;
-      bottom: 0;
-      left: 0;
+      bottom: -37px;
       content: "";
-      width: 50%;
-      height: 17px;
-      background: linear-gradient(to bottom left, #ffffff 50%, #81b3d2 50%, #81b3d2 100%);
-    }
-  }
-
-  &::before {
-    @media (max-width: @mobile-width-only) {
-      position: absolute;
-      z-index: 1;
-      bottom: 0;
-      right: 0;
-      content: "";
-      width: 50%;
-      height: 17px;
-      background: linear-gradient(to bottom right, #ffffff 50%, #81b3d2 50%, #81b3d2 100%);
+      width: 100%;
+      height: 37px;
+      background-image: url("../../img/intro-small-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 

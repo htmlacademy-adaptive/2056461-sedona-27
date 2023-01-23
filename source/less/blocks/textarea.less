@@ -8,8 +8,12 @@
   min-height: 150px;
   border: none;
   padding: 16px;
-  color: #00000030;
+  color: #000000;
   background-color: #f2f2f2;
+
+  &::placeholder {
+    color: #00000030;
+  }
 
   &:hover {
     background-color: #e5e5e5;
@@ -35,12 +39,10 @@
   @media (min-width: @tablet-width) {
     min-width: 648px;
     min-height: 160px;
-    transition: 0.5s;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 768px;
     width: calc(100% - 192px);
-    transition: 0.5s;
   }
 }
