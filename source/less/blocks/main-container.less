@@ -1,7 +1,10 @@
 .main-container {
+  @media (max-width: @mobile-width-only) {
+    background-color: #ffffff;
+    padding-bottom: 10px;
+  }
+
   @media (min-width: @desktop-width) {
-    @media (min-width: @tablet-width) {
-      background-color: #e7e5e5;
-    }
+    background-color: #e7e5e5;
   }
 }

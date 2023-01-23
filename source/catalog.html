@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" href="./favicon.ico">
@@ -59,6 +60,14 @@
             <a class="card__picture" href="#">
               <picture>
                 <source media="(min-width: 1200px)"
+                  srcset="./img/catalog/photo-1-desktop@1x.webp, ./img/catalog/photo-1-desktop@2x.webp 2x" width="1200"
+                  height="400">
+                <source media="(min-width: 768px)"
+                  srcset="./img/catalog/photo-1-tablet@1x.webp, ./img/catalog/photo-1-tablet@2x.webp 2x" width="648"
+                  height="400">
+                <source
+                  srcset="./img/catalog/photo-1-mobile@1x.webp, ./img/catalog/photo-1-mobile@2x.webp 2x" width="280" height="280">
+                <source media="(min-width: 1200px)"
                   srcset="./img/catalog/photo-1-desktop@1x.jpg, ./img/catalog/photo-1-desktop@2x.jpg 2x" width="1200"
                   height="400">
                 <source media="(min-width: 768px)"
@@ -74,6 +83,7 @@
               <p class="card__text">Автор фото: Борис</p>
               <div class="card__like-container">
                 <button class="card__like-icon" type="button">
+                  <span class="visually-hidden">Ставь лайк если нравится фото!</span>
                   <svg width="23" height="21">
                     <use href="./img/sprite.svg#icon-like"></use>
                   </svg>
@@ -87,7 +97,16 @@
           <div class="card__container">
             <a class="card__picture" href="#">
               <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/catalog/photo-2-desktop@1x.webp, ./img/catalog/photo-2-desktop@2x.webp 2x" width="400"
+                  height="267">
                 <source media="(min-width: 768px)"
+                  srcset="./img/catalog/photo-2-tablet@1x.webp, ./img/catalog/photo-2-tablet@2x.webp 2x" width="324"
+                  height="267">
+                <source
+                  srcset="./img/catalog/photo-2-mobile@1x.webp, ./img/catalog/photo-2-mobile@2x.webp 2x" width="280"
+                  height="280">
+                <source media="(min-width: 1200px)"
                   srcset="./img/catalog/photo-2-desktop@1x.jpg, ./img/catalog/photo-2-desktop@2x.jpg 2x" width="400"
                   height="267">
                 <source media="(min-width: 768px)"
@@ -103,6 +122,7 @@
               <p class="card__text">Автор фото: Сергей</p>
               <div class="card__like-container">
                 <button class="card__like-icon" type="button">
+                  <span class="visually-hidden">Ставь лайк если нравится фото!</span>
                   <svg width="23" height="21">
                     <use href="./img/sprite.svg#icon-like"></use>
                   </svg>
@@ -116,14 +136,22 @@
           <div class="card__container">
             <a class="card__picture" href="#">
               <picture>
+                <source media="(min-width: 1200px)"
+                srcset="./img/catalog/photo-3-desktop@1x.webp, ./img/catalog/photo-3-desktop@2x.webp 2x" width="400"
+                height="267">
                 <source media="(min-width: 768px)"
+                srcset="./img/catalog/photo-3-tablet@1x.webp, ./img/catalog/photo-3-tablet@2x.webp 2x" width="324"
+                height="267">
+                <source
+                srcset="./img/catalog/photo-3-mobile@1x.webp, ./img/catalog/photo-3-mobile@2x.webp 2x" width="280" height="280">
+                <source media="(min-width: 1200px)"
                   srcset="./img/catalog/photo-3-desktop@1x.jpg, ./img/catalog/photo-3-desktop@2x.jpg 2x" width="400"
                   height="267">
                 <source media="(min-width: 768px)"
                   srcset="./img/catalog/photo-3-tablet@1x.jpg, ./img/catalog/photo-3-tablet@2x.jpg 2x" width="324"
                   height="267">
                 <img class="card__img" src="./img/catalog/photo-3-mobile@1x.jpg"
-                  srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Закат в пустыне вблизи седоны">
+                  srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Закат в пустыне вблизи Седоны">
               </picture>
             </a>
             <div class="card__description">
@@ -131,6 +159,7 @@
               <p class="card__text">Автор фото: Петр</p>
               <div class="card__like-container">
                 <button class="card__like-icon" type="button">
+                  <span class="visually-hidden">Ставь лайк если нравится фото!</span>
                   <svg width="23" height="21">
                     <use href="./img/sprite.svg#icon-like"></use>
                   </svg>
@@ -144,7 +173,16 @@
           <div class="card__container">
           <a class="card__picture" href="#">
             <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/catalog/photo-4-desktop@1x.webp, ./img/catalog/photo-4-desktop@2x.webp 2x" width="400"
+                height="267">
               <source media="(min-width: 768px)"
+                srcset="./img/catalog/photo-4-tablet@1x.webp, ./img/catalog/photo-4-tablet@2x.webp 2x" width="324"
+                height="267">
+              <source
+                srcset="./img/catalog/photo-4-mobile@1x.webp, ./img/catalog/photo-4-mobile@2x.webp 2x" width="280"
+                height="280">
+              <source media="(min-width: 1200px)"
                 srcset="./img/catalog/photo-4-desktop@1x.jpg, ./img/catalog/photo-4-desktop@2x.jpg 2x" width="400"
                 height="267">
               <source media="(min-width: 768px)"
@@ -160,6 +198,7 @@
               <p class="card__text">Автор фото: Антон</p>
               <div class="card__like-container">
                 <button class="card__like-icon" type="button">
+                  <span class="visually-hidden">Ставь лайк если нравится фото!</span>
                   <svg width="23" height="21">
                     <use href="./img/sprite.svg#icon-like"></use>
                   </svg>
@@ -179,6 +218,15 @@
           раз!</p>
         <a class="invitation__picture" href="#">
           <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/video-desktop@1x.webp, ./img/video-desktop@2x.webp 2x"
+              width="800" height="500">
+            <source media="(min-width: 768px)"
+              srcset="./img/video-tablet@1x.webp, ./img/video-tablet@2x.webp 2x"
+              width="648" height="500">
+            <source
+              srcset="./img/video-mobile@1x.webp, ./img/video-mobile@2x.webp 2x"
+              width="280" height="177">
             <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg, ./img/video-desktop@2x.jpg 2x"
               width="800" height="500">
             <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg, ./img/video-tablet@2x.jpg 2x"
