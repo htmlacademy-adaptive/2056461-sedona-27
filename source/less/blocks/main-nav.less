@@ -5,7 +5,7 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 17px;
   right: 20px;
@@ -33,7 +33,7 @@
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: @mobile-width-only) {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     top: 17px;
     right: 20px;
@@ -73,7 +73,7 @@
     position: absolute;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
   }
@@ -83,8 +83,8 @@
   @media (max-width: @mobile-width-only) {
     display: block;
     width: 100%;
-    position: absolute;
-    margin: 0;
+    position: initial;
+    margin: 96px 0 0;
     padding: 0;
     z-index: 1;
     top: 0;
