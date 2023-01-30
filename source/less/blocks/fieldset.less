@@ -28,7 +28,6 @@
   }
 }
 
-
 .fieldset__container {
   box-sizing: border-box;
   min-width: 320px;
@@ -36,8 +35,13 @@
   margin: 0;
   padding: 24px 20px 24px;
 
-  &--comment {
+  &.fieldset__container--comment {
     padding-bottom: 52px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 2px;
+      padding: 0;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -98,7 +102,7 @@
 
   &--radio {
     @media (min-width: @tablet-width) {
-      width: 575px;
+      width: 576px;
       display: grid;
       grid-template-columns: 280px 280px;
       column-gap: 16px;
@@ -146,6 +150,11 @@
 
 .fieldset__label {
   padding-left: 16px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
 }
 
 .fieldset__input {

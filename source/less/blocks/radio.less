@@ -1,8 +1,10 @@
 .radio {
   padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  width: auto;
+  grid-template-columns: 46px auto;
+  column-gap: 16px;
+  align-items: flex-start;
   cursor: pointer;
 
   &:hover .radio__dot {
@@ -13,17 +15,13 @@
     box-shadow: inset 0 0 0 15px #e5e5e5;
   }
 
-  &:active .radio__dot,
-  &:focus .radio__dot,
-  &:focus-visible .radio__dot {
+  &:active .radio__dot {
     background-color: #33333330;
     box-shadow: inset 0 0 0 15px #e5e5e5;
     outline: none;
   }
 
-  &:active .radio__input[type="radio"]:checked + .radio__dot,
-  &:focus .radio__input[type="radio"]:checked + .radio__dot,
-  &:focus-visible .radio__input[type="radio"]:checked + .radio__dot {
+  &:active .radio__input[type="radio"]:checked + .radio__dot {
     background-color: #33333330;
     box-shadow: inset 0 0 0 15px #e5e5e5;
     outline: none;
@@ -41,9 +39,7 @@
     background-color: #e5e5e5;
   }
 
-  &:active,
-  &:focus,
-  &:focus-visible {
+  &:active {
     background-color: #e5e5e5;
   }
 }
@@ -56,9 +52,7 @@
     box-shadow: inset 0 0 0 15px #e5e5e5;
   }
 
-  &:active,
-  &:focus,
-  &:focus-visible {
+  &:active {
     background-color: #33333330;
     box-shadow: inset 0 0 0 15px #e5e5e5;
     outline: none;
@@ -72,3 +66,21 @@
   }
 }
 
+.radio .radio__input:focus-visible + .radio__dot {
+  background-color: #333333;
+  box-shadow: inset 0 0 0 15px #ffffff;
+  outline: auto;
+}
+
+.radio__text {
+  margin-top: 10px;
+  text-align: start;
+  overflow-wrap: break-word;
+  grid-column: 2/-1;
+
+
+  @media (min-width: @tablet-width) {
+    min-width: fit-content;
+    max-width: 218px;
+  }
+}

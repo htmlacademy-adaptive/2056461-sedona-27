@@ -40,7 +40,7 @@
       width: calc(100% - 40px);
       height: 1px;
       background-color: #d6d6d6;
-      bottom: 0;
+      bottom: 3px;
     }
   }
 
@@ -51,7 +51,7 @@
       width: calc(100% - 40px);
       height: 1px;
       background-color: #d6d6d6;
-      bottom: 0;
+      bottom: 3px;
     }
   }
 
@@ -68,6 +68,14 @@
   &:nth-of-type(4) .item__text {
     width: calc(100% - 40px);
     margin: 0 auto;
+
+    & br {
+      display: none;
+
+      @media (min-width: @tablet-width) {
+        display: inline;
+      }
+    }
 
     @media (min-width: @tablet-width) {
       width: calc(100% - 30px);

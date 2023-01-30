@@ -55,12 +55,12 @@
     padding: 22px 20px 15px;
     display: grid;
     grid-template-columns: 1fr 80px;
-    align-items: center;
+    align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    padding: 21px 20px 15px;
+    padding: 22px 20px 15px 21px;
     width: 100%;
     min-height: 80px;
     bottom: 0;
@@ -71,7 +71,7 @@
 
 .card:not(:nth-child(1)) .card__description {
   @media (min-width: @desktop-width) {
-    padding: 17px 25px 15px;
+    padding: 18px 19px 15px 25px;
   }
 }
 
@@ -84,7 +84,7 @@
   .text-14 ();
   text-transform: none;
   text-align: start;
-  margin: 0 0 11px;
+  margin: 1px 0 11px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
@@ -93,13 +93,18 @@
 }
 
 .card__like-container {
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 23px auto;
+  column-gap: 14px;
+  align-items: end;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/-1;
     grid-row: 1/3;
+    align-self: center;
     justify-self: end;
+    margin-top: -5px;
+    column-gap: 9px;
   }
 }
 
@@ -110,6 +115,7 @@
   cursor: pointer;
   color: #00000030;
   padding: 0;
+  align-self: center;
 
   &:hover {
     color: #81b3d2;
@@ -129,5 +135,8 @@
 }
 
 .card__like-number {
+  max-width: 120px;
   .title-14();
+  grid-column: 2/-1;
+  overflow-wrap: break-word;
 }
